@@ -22,7 +22,7 @@ The project uses:
 
 ### Deploy in Heroku
 
-You can test in [here](https://secret-inlet-38373.herokuapp.com)
+You can test in [here](https://secret-inlet-38373.herokuapp.com/api/)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
