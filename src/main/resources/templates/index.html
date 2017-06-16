@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" xmlns:th="http://www.thymeleaf.org" >
+<head>
+	<title>Secret Inlet</title>
+	<base href="/" th:href="@{__${baseURL}__}" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+	<link rel="stylesheet" th:href="@{/webjars/font-awesome/css/font-awesome.min.css}" />
+	<link rel="stylesheet" th:href="@{/css/styles.css}"  />
+	<link rel="stylesheet" th:href="@{/css/to-do.css}"  />
+	
+</head>
+<body>
+
+	<div class="container" ng-controller="IndexCtrl">
+		<section class="task-panel tasks-widget">
+          	<div class="panel-heading">
+                  <div class="pull-left"><h5><i class="fa fa-tasks"></i> Bookmark List</h5></div>
+                  <br>
+                  <div class=" add-task-row">
+                    <a class="btn btn-success btn-sm pull-right" href="">Add New Bookmark</a>
+                </div>
+                <br>
+           	</div>
+            <div class="panel-body">
+                <div class="task-content">
+                    <ul id="sortable" class="task-list" ng-repeat="item in bookmarks">
+                        <li class="list-primary">
+                            <i class=" fa fa-bookmark-o"></i>
+                            <div class="task-title">
+                                <span class="task-title-sp">{{item.name}}</span>
+                                <span class="badge bg-theme">{{item.type}}</span>
+                                <div class="pull-right hidden-phone">
+                                    <button class="btn btn-success btn-xs fa fa-check"></button>
+                                    <button class="btn btn-primary btn-xs fa fa-pencil"></button>
+                                    <button class="btn btn-danger btn-xs fa fa-trash-o"></button>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+          </section>
+	</div>
+	
+	
+	<script type="text/javascript" th:src="@{/webjars/angularjs/angular.min.js}"></script>
+	
+	<script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+
+	<script type="text/javascript" th:src="@{/webjars/URI.js/URI.min.js}"></script>
+	
+	<script type="text/javascript" th:src="@{/js/app.js}"></script>
+	
+	<script type="text/javascript" th:src="@{/js/services.js}"></script> 
+	
+ 	<script type="text/javascript" th:src="@{/js/controllers.js}"></script> 
+
+</body>
+</html>

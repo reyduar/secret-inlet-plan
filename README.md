@@ -1,4 +1,4 @@
-# SPRING BOOT API REST
+# Secret Inlet
 
   
  ### Project description
@@ -22,7 +22,7 @@ The project uses:
 
 ### Deploy in Heroku
 
-You can test in [here](https://secret-inlet-38373.herokuapp.com/api/)
+You can test in [here](https://secret-inlet-38373.herokuapp.com/)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
